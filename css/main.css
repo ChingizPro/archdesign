@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 125px;
+  padding-right: 125px;
+}
+/*# sourceMappingURL=main.css.map */
