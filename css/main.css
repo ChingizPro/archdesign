@@ -24,4 +24,76 @@ img {
   padding-left: 100px;
   padding-right: 100px;
 }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__brand {
+  display: inline-block;
+}
+
+.nav__logo {
+  width: 190px;
+}
+
+.nav__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__list--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav__list--langs {
+  position: absolute;
+}
+
+.nav__item {
+  line-height: 1.5;
+  margin-left: 30px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #534100;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.nav__dropdown {
+  position: relative;
+  margin-left: 30px;
+}
+
+.nav__list--links .nav__link {
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */
