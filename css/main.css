@@ -37,6 +37,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .nav__brand {
@@ -82,8 +89,12 @@ img {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
 }
 
 .nav__item {
@@ -113,14 +124,26 @@ img {
   background-color: transparent;
   border: 1px dotted #534100;
   padding: 6px;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
   font-size: 15px;
   color: #534100;
   cursor: pointer;
+  -webkit-transition: 0.2s border-radius linear;
+  transition: 0.2s border-radius linear;
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
 }
 
 .nav__lang > .lang__text {
   font-weight: bold;
+}
+
+.nav__lang > i {
+  font-size: 13px;
+  -webkit-transition: 0.2s -webkit-transform linear;
+  transition: 0.2s -webkit-transform linear;
+  transition: 0.2s transform linear;
+  transition: 0.2s transform linear, 0.2s -webkit-transform linear;
 }
 
 .nav__list--links .nav__item {
@@ -161,5 +184,24 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
+}
+
+.dropdown--show {
+  border: 1px dotted #534100;
+  border-top: 0;
+  opacity: 1;
+  height: 60px;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.nav__lang.active {
+  border-radius: 4px 4px 0 0;
+}
+
+.nav__lang.active > i {
+  -webkit-transform: rotateX(180deg) translateY(1px);
+          transform: rotateX(180deg) translateY(1px);
 }
 /*# sourceMappingURL=main.css.map */
