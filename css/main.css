@@ -52,6 +52,7 @@ img {
 
 .nav__logo {
   width: 190px;
+  display: block;
 }
 
 .nav__lists {

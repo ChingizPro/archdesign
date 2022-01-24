@@ -4,7 +4,7 @@
     var elDropdownList = $('.nav__list--langs');
 
     var hideDropdown = (evt) => {
-        if(evt.target.contains(elDropdownList)){
+        if(evt.target.contains(elDropdownList) || evt.target.classList.contains('nav__logo')){
             elDropdownList.classList.remove('dropdown--show');
             elDropdownToggler.classList.remove('active');
             elDropdownToggler.removeEventListener('click', hideDropdownOnTogglerClick);
