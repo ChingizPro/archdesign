@@ -16,54 +16,68 @@
         <a class="nav__brand" href="#">
             <img class="nav__logo" src="img/logo.png" alt="sitelogo">
         </a>
-        <div class="nav__right">
-            <div class="nav__toggle"></div>
-            <div class="nav__lists">
-                <ul class="nav__list nav__list--links">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Bosh sahifa</a>
+        <div id="toggler" class="nav__toggle">
+            <svg id="toggler__img" width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </div>
+        <div class="nav__lists">
+            <ul class="nav__list nav__list--links">
+                <li class="nav__item hidden">
+                    <a class="nav__brand" href="#">
+                        <img class="nav__logo" src="img/logo.png" alt="sitelogo">
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Bosh sahifa</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Biz haqimizda</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Loyihalar</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Xizmatlar</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Yangiliklar</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Bog'lanish</a>
+                </li>
+            </ul>
+            <div class="nav__dropdown">
+                <button class="nav__lang langclick">
+                    <img class="lang__img langclick" src="img/uzb_flag_logo.png" alt=" ">
+                    <span class="lang__text langclick">Uz</span>
+                    <i class="fas fa-chevron-down langclick"></i>
+                </button>
+                <ul class="nav__list nav__list--langs">
+                    <li class="nav__item lang">
+                        <a class="nav__link tick" href="#" data-id="uz">
+                            <img class="lang__img tick" src="img/uzb_flag_logo.png" alt=" " data-id="uz">
+                            <span class="lang__text tick" data-id="uz">Uz</span>
+                        </a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Biz haqimizda</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Loyihalar</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Xizmatlar</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Yangiliklar</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Bog'lanish</a>
+                    <li class="nav__item lang">
+                        <a class="nav__link tick" href="#" data-id="ru">
+                            <img class="lang__img tick" src="img/russia_flag_logo.png" alt=" " data-id="ru">
+                            <span class="lang__text tick" data-id="ru">Ru</span>
+                        </a>
                     </li>
                 </ul>
-                <div class="nav__dropdown">
-                    <button class="nav__lang langclick">
-                        <img class="lang__img langclick" src="img/uzb_flag_logo.png" alt=" ">
-                        <span class="lang__text langclick">Uz</span>
-                        <i class="fas fa-chevron-down langclick"></i>
-                    </button>
-                    <ul class="nav__list nav__list--langs">
-                        <li class="nav__item lang">
-                            <a class="nav__link tick" href="#" data-id="uz">
-                                <img class="lang__img tick" src="img/uzb_flag_logo.png" alt=" " data-id="uz">
-                                <span class="lang__text tick" data-id="uz">Uz</span>
-                            </a>
-                        </li>
-                        <li class="nav__item lang">
-                            <a class="nav__link tick" href="#" data-id="ru">
-                                <img class="lang__img tick" src="img/russia_flag_logo.png" alt=" " data-id="ru">
-                                <span class="lang__text tick" data-id="ru">Ru</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </nav>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi ipsam dolore consequuntur tempora vitae, dolorem ratione explicabo est itaque optio fuga odit totam aliquid non, inventore reiciendis perferendis dolor sapiente? Mollitia inventore adipisci quisquam consectetur minus, porro perferendis impedit quas sunt quod, nemo distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat consectetur quae assumenda animi necessitatibus fugit aut ex, accusamus corrupti expedita enim culpa earum sequi tempora? Iusto asperiores, alias nam doloribus quia aliquid ut. Repellat nobis accusantium veritatis, cupiditate, non sint eligendi perferendis quod illum ab cum nam commodi quisquam pariatur facilis vitae et libero aperiam accusamus explicabo veniam aspernatur. Nulla fuga pariatur quaerat omnis minima neque deserunt, nobis debitis facilis quibusdam cupiditate blanditiis iure mollitia tempore consectetur quasi itaque illo ipsa laudantium aspernatur cumque? Officiis veniam quia hic deserunt totam, vel facilis aut ea fugit vero illo quidem tempore.</p>
+    <!-- * menu curtain -->
+    <div id="menu-curtain"></div>
+    <div></div>
     <script src="js/general.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
