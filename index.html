@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="body">
+    <!-- * nav -->
     <nav class="nav container">
         <a class="nav__brand" href="#">
             <img class="nav__logo" src="img/logo.png" alt="sitelogo">
@@ -72,12 +74,66 @@
             </div>
         </div>
     </nav>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi ipsam dolore consequuntur tempora vitae, dolorem ratione explicabo est itaque optio fuga odit totam aliquid non, inventore reiciendis perferendis dolor sapiente? Mollitia inventore adipisci quisquam consectetur minus, porro perferendis impedit quas sunt quod, nemo distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat consectetur quae assumenda animi necessitatibus fugit aut ex, accusamus corrupti expedita enim culpa earum sequi tempora? Iusto asperiores, alias nam doloribus quia aliquid ut. Repellat nobis accusantium veritatis, cupiditate, non sint eligendi perferendis quod illum ab cum nam commodi quisquam pariatur facilis vitae et libero aperiam accusamus explicabo veniam aspernatur. Nulla fuga pariatur quaerat omnis minima neque deserunt, nobis debitis facilis quibusdam cupiditate blanditiis iure mollitia tempore consectetur quasi itaque illo ipsa laudantium aspernatur cumque? Officiis veniam quia hic deserunt totam, vel facilis aut ea fugit vero illo quidem tempore.</p>
+    <!-- * home carousel -->
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper__slide">
+                <img src="img/home_carousel1.jpg" alt="home_carousel1">
+                <div class="swiper__box">
+                    <div class="swiper__caption">
+                        <h2 class="swiper__title">Swiper title</h2>
+                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
+                        <a class="swiper__link" href="#">More info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper__slide">
+                <img src="img/home_carousel2.jpg" alt="home_carousel2">
+                <div class="swiper__box">
+                    <div class="swiper__caption">
+                        <h2 class="swiper__title">Swiper title</h2>
+                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
+                        <a class="swiper__link" href="#">More info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper__slide">
+                <img src="img/home_carousel3.jpg" alt="home_carousel3">
+                <div class="swiper__box">
+                    <div class="swiper__caption">
+                        <h2 class="swiper__title">Swiper title</h2>
+                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
+                        <a class="swiper__link" href="#">More info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper__slide">
+                <img src="img/home_carousel4.jpg" alt="home_carousel4">
+                <div class="swiper__box">
+                    <div class="swiper__caption">
+                        <h2 class="swiper__title">Swiper title</h2>
+                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
+                        <a class="swiper__link" href="#">More info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev swiper__button"></div>
+        <div class="swiper-button-next swiper__button"></div>
+    </div>
     <!-- * menu curtain -->
     <div id="menu-curtain"></div>
     <div></div>
+    <!-- ! link js -->
     <script src="js/general.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/nav.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>

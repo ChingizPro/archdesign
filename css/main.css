@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  margin-top: 74px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -397,6 +398,72 @@ img {
 .nav__item.hidden {
   display: none;
   margin-bottom: 10px;
+}
+
+.swiper__slide {
+  position: relative;
+}
+
+.swiper__slide > img {
+  display: block;
+}
+
+.swiper__box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.swiper__caption {
+  padding: 25px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 40px;
+}
+
+.swiper__title {
+  margin: 0;
+}
+
+.swiper__link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffd700;
+  color: #000000;
+  padding: 7px 15px;
+  border-radius: 4px;
+}
+
+.swiper__button {
+  width: 40px;
+  height: 45px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  color: #ffd700;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.swiper__button::after {
+  font-size: 27px;
 }
 
 @media (max-width: 1335px) {
