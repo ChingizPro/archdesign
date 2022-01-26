@@ -40,7 +40,7 @@ img {
           align-items: center;
   padding-top: 17px;
   padding-bottom: 16px;
-  background-color: yellow;
+  background-color: #ffd700;
   position: fixed;
   top: 0;
   left: 0;
@@ -69,6 +69,7 @@ img {
 }
 
 .nav__lists.open {
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,6 +286,7 @@ img {
 
 #toggler.open {
   z-index: 110;
+  color: #ffd700;
   -webkit-transform: translate(28px, -8px) scale(0.8);
           transform: translate(28px, -8px) scale(0.8);
 }
