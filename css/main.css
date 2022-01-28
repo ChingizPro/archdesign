@@ -468,6 +468,57 @@ img {
   font-size: 27px;
 }
 
+.home {
+  text-align: center;
+  padding: 60px 70px;
+}
+
+.home__icon {
+  color: #ffd700;
+  font-size: 75px;
+}
+
+.home__title {
+  font-size: 35px;
+  margin: 20px 0;
+  color: #534100;
+}
+
+.home__subtitle {
+  font-size: 20px;
+}
+
+.home__text {
+  font-size: 17px;
+}
+
+.home__line {
+  margin: 30px auto;
+  width: 300px;
+  border: none;
+  height: 4px;
+  background-color: #ffd700;
+  border-radius: 4px;
+}
+
+.home__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #534100;
+  border: 3px solid #534100;
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-transition: 0.2s border-color linear, 0.2s background-color linear;
+  transition: 0.2s border-color linear, 0.2s background-color linear;
+}
+
+.home__link:hover {
+  background-color: #ffd700;
+  border-color: #ffd700;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
