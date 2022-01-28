@@ -510,13 +510,57 @@ img {
   border: 3px solid #534100;
   padding: 10px 20px;
   border-radius: 4px;
-  -webkit-transition: 0.2s border-color linear, 0.2s background-color linear;
-  transition: 0.2s border-color linear, 0.2s background-color linear;
+  -webkit-transition: 0.2s color linear, 0.2s border-color linear, 0.2s background-color linear;
+  transition: 0.2s color linear, 0.2s border-color linear, 0.2s background-color linear;
 }
 
 .home__link:hover {
   background-color: #ffd700;
   border-color: #ffd700;
+}
+
+.info {
+  padding: 120px 50px;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../img/house_in_field.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 45px;
+  line-height: 1.7;
+  font-size: 17px;
+  width: 70%;
+  margin: auto;
+}
+
+.info__title {
+  margin-top: 0;
+}
+
+.info__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffd700;
+  border: 3px solid #ffd700;
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-transition: 0.2s color linear, 0.2s border-color linear, 0.2s background-color linear;
+  transition: 0.2s color linear, 0.2s border-color linear, 0.2s background-color linear;
+}
+
+.info__link:hover {
+  background-color: #ffd700;
+  border-color: #ffd700;
+}
+
+.info__link:hover {
+  color: #534100;
 }
 
 @media (max-width: 1335px) {
