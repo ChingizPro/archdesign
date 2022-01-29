@@ -708,9 +708,9 @@ img {
   }
 }
 
-@media (max-width: 1050px) {
-  .info__content {
-    width: 85%;
+@media (max-width: 1075px) {
+  .employees {
+    width: 80%;
   }
 }
 
@@ -721,6 +721,12 @@ img {
   }
   .swiper__button {
     display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .info__content {
+    width: 85%;
   }
 }
 
@@ -735,6 +741,12 @@ img {
   .nav {
     padding-top: 13px;
     padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 975px) {
+  .employees {
+    width: 90%;
   }
 }
 
@@ -767,6 +779,10 @@ img {
   #toggler {
     margin-right: -2px;
   }
+  .employees {
+    width: 100%;
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 770px) {
@@ -781,6 +797,22 @@ img {
   }
   .home__subtitle {
     font-size: 19px;
+  }
+  .employees {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  .employee {
+    padding: 0;
+  }
+  .employee__box {
+    padding: 15px;
+  }
+  .employee__name {
+    margin-top: 0;
+  }
+  .employee__button {
+    display: none;
   }
 }
 
@@ -797,6 +829,12 @@ img {
 @media (max-width: 670px) {
   .info {
     padding: 45px 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .employees {
+    padding: 25px 0;
   }
 }
 
@@ -845,6 +883,18 @@ img {
   .home__line {
     width: 240px;
   }
+  .employees {
+    width: 450px;
+  }
+  .employee {
+    padding: 20px;
+  }
+  .employee__box {
+    padding: 0;
+  }
+  .employee__name {
+    margin: 15px 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -863,6 +913,12 @@ img {
   .swiper__caption {
     padding: 15px;
     background-color: #000000;
+  }
+}
+
+@media (max-width: 500px) {
+  .employees {
+    width: 100%;
   }
 }
 
@@ -918,6 +974,12 @@ img {
     padding: 25px 15px;
     text-align: center;
   }
+  .employees {
+    padding: 20px 0;
+  }
+  .employee {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -927,6 +989,18 @@ img {
   }
   .nav__lists {
     width: 100%;
+  }
+  .employees {
+    padding: 15px 0;
+  }
+  .employee {
+    padding: 0;
+  }
+  .employee__box {
+    padding: 10px;
+  }
+  .employee__name {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
