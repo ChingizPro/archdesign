@@ -1,5 +1,5 @@
 (function(){
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.main-swiper', {
         // Optional parameters
         loop: true,
         speed: 500,
