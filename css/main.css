@@ -811,9 +811,6 @@ img {
   .employee__name {
     margin-top: 0;
   }
-  .employee__button {
-    display: none;
-  }
 }
 
 @media (max-width: 700px) {
