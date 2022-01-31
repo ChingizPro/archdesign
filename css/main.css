@@ -620,6 +620,114 @@ img {
   right: 15px;
 }
 
+.footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: 0.2s color linear;
+  transition: 0.2s color linear;
+}
+
+.footer a:hover {
+  color: #ffd700;
+}
+
+.footer__top, .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__top {
+  padding: 35px 0 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__contacts {
+  width: 55%;
+}
+
+.footer__links {
+  width: 45%;
+}
+
+.footer__links--title {
+  margin-top: 0;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__brand {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 190px;
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+.footer__bottom-wrap {
+  padding: 25px 0;
+  background-color: #000000;
+}
+
+.footer__bottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contactbox {
+  margin-bottom: 10px;
+}
+
+.footer__contactbox:last-child {
+  margin-bottom: 0;
+}
+
+.footer__contact {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact--icon {
+  margin-right: 7px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 17px;
+}
+
+.footer__social--item {
+  margin-left: 22px;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
