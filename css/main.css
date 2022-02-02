@@ -728,6 +728,47 @@ img {
   margin-left: 22px;
 }
 
+.stats {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats .stat {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.stats .stat__img {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 70px;
+  color: #ffd700;
+}
+
+.stats .stat__num {
+  color: #534100;
+  font-size: 35px;
+  margin: 5px 0 10px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.stats .stat__name {
+  color: #534100;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
