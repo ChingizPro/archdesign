@@ -182,6 +182,7 @@ img {
 .nav__dropdown {
   position: relative;
   margin-left: 30px;
+  font-weight: bold;
 }
 
 .nav__lang {
@@ -193,16 +194,20 @@ img {
           align-items: center;
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px dotted #534100;
+  border: 1px solid #000000;
   padding: 6px;
   border-radius: 4px;
   font-size: 15px;
-  color: #534100;
+  color: #000000;
   cursor: pointer;
-  -webkit-transition: 0.2s border-radius linear;
-  transition: 0.2s border-radius linear;
+  -webkit-transition: 0.2s border-radius linear, 0.2s color linear;
+  transition: 0.2s border-radius linear, 0.2s color linear;
   -webkit-perspective: 1200px;
           perspective: 1200px;
+}
+
+.nav__lang:hover {
+  color: #534100;
 }
 
 .nav__lang > .lang__text {
@@ -243,11 +248,11 @@ img {
 }
 
 .lang:hover {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .lang:first-child {
-  border-bottom: 1px dotted #534100;
+  border-bottom: 1px solid #000000;
 }
 
 .lang .nav__link {
@@ -264,13 +269,14 @@ img {
 }
 
 .dropdown--show {
-  border: 1px dotted #534100;
+  border: 1px solid #000000;
   border-top: 0;
   opacity: 1;
   height: 60px;
   visibility: visible;
   -webkit-transform: scale(1);
           transform: scale(1);
+  background-color: rgba(255, 215, 0, 0.75);
 }
 
 .nav__lang.active {
