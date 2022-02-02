@@ -164,9 +164,19 @@ img {
 
 .nav__link {
   text-decoration: none;
-  color: #534100;
+  color: #000000;
   text-transform: uppercase;
   display: inline-block;
+  -webkit-transition: 0.1s color linear, 0.1s -webkit-transform linear;
+  transition: 0.1s color linear, 0.1s -webkit-transform linear;
+  transition: 0.1s color linear, 0.1s transform linear;
+  transition: 0.1s color linear, 0.1s transform linear, 0.1s -webkit-transform linear;
+}
+
+.nav__link:hover {
+  color: #534100;
+  -webkit-transform: scaleX(1.025);
+          transform: scaleX(1.025);
 }
 
 .nav__dropdown {
