@@ -740,20 +740,20 @@ img {
           justify-content: space-between;
 }
 
-.stats .stat {
+.stat {
   width: 25%;
   text-align: center;
   margin-bottom: 35px;
 }
 
-.stats .stat__img {
+.stat__img {
   border-radius: 50%;
   display: inline-block;
   font-size: 70px;
   color: #ffd700;
 }
 
-.stats .stat__num {
+.stat__num {
   color: #534100;
   font-size: 35px;
   margin: 5px 0 10px;
@@ -761,7 +761,7 @@ img {
   letter-spacing: 1px;
 }
 
-.stats .stat__name {
+.stat__name {
   color: #534100;
   font-size: 17px;
   text-transform: uppercase;
@@ -913,6 +913,12 @@ img {
   .home {
     padding: 50px 35px;
   }
+  .stat__img {
+    font-size: 60px;
+  }
+  .stat__num {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -942,6 +948,15 @@ img {
     width: 100%;
     padding: 40px 0;
   }
+  .stat__img {
+    font-size: 55px;
+  }
+  .stat__num {
+    font-size: 28px;
+  }
+  .stat__name {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -969,6 +984,16 @@ img {
   }
   .employee__name {
     margin-top: 0;
+  }
+  .stats {
+    padding-top: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .stat {
+    width: 33.33%;
   }
 }
 
@@ -1099,6 +1124,15 @@ img {
     padding: 15px;
     background-color: #000000;
   }
+  .stat {
+    width: 50%;
+  }
+  .stat__img {
+    font-size: 65px;
+  }
+  .stat__num {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1144,6 +1178,15 @@ img {
   }
 }
 
+@media (max-width: 435px) {
+  .stats {
+    margin-bottom: 25px;
+  }
+  .stat {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 400px) {
   .container {
     padding-left: 15px;
@@ -1176,6 +1219,15 @@ img {
   }
 }
 
+@media (max-width: 380px) {
+  .stat__img {
+    font-size: 60px;
+  }
+  .stat__num {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 350px) {
   .container {
     padding-left: 10px;
@@ -1195,6 +1247,9 @@ img {
   }
   .employee__name {
     margin-top: 0;
+  }
+  .stat__img {
+    font-size: 55px;
   }
 }
 /*# sourceMappingURL=main.css.map */
