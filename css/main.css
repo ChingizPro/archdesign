@@ -866,6 +866,36 @@ img {
   letter-spacing: 1.5px;
 }
 
+.about__home {
+  background-image: url("../img/home_carousel4.jpg");
+  padding: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about__home-content {
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 90px 45px;
+}
+
+.about__home-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #534100;
+  font-size: 27px;
+}
+
+.about__home-text {
+  line-height: 1.5;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
@@ -947,6 +977,9 @@ img {
   .nav__list--langs {
     position: static;
   }
+  .dropdown--show {
+    background-color: #ffffff;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -955,6 +988,13 @@ img {
   }
   .home__title {
     font-size: 33px;
+  }
+  .about__home {
+    padding: 35px 0;
+  }
+  .about__home-content {
+    width: 65%;
+    padding: 70px 40px;
   }
 }
 
@@ -1015,6 +1055,13 @@ img {
   }
   .stat__num {
     font-size: 30px;
+  }
+  .about__home {
+    padding: 45px;
+  }
+  .about__home-content {
+    width: 100%;
+    padding: 45px;
   }
 }
 
@@ -1108,6 +1155,16 @@ img {
   .footer__links {
     width: 35%;
   }
+  .about__home {
+    padding: 35px;
+  }
+  .about__home-content {
+    padding: 25px;
+  }
+  .about__home-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1145,6 +1202,13 @@ img {
   }
   .footer__contacts {
     margin-bottom: 30px;
+  }
+  .about__home {
+    padding: 25px;
+  }
+  .about__home-content {
+    text-align: center;
+    padding: 30px;
   }
 }
 
@@ -1238,6 +1302,13 @@ img {
 @media (max-width: 500px) {
   .employees {
     width: 100%;
+  }
+  .about__home {
+    padding: 0;
+  }
+  .about__home-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
   }
 }
 
