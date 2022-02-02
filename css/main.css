@@ -896,6 +896,42 @@ img {
   margin-bottom: 0;
 }
 
+.abouts {
+  padding: 50px 0 35px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.about__box {
+  width: 48%;
+  line-height: 1.5;
+}
+
+.about__img {
+  width: 48%;
+  -webkit-box-shadow: 7px 7px 3px 0 #ffd700, 14px 14px 3px 0 #534100;
+          box-shadow: 7px 7px 3px 0 #ffd700, 14px 14px 3px 0 #534100;
+}
+
+.about__title {
+  margin-top: 0;
+  font-size: 28px;
+  color: #534100;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
@@ -1044,6 +1080,9 @@ img {
   .footer__links {
     width: 40%;
   }
+  .abouts {
+    padding: 40px 0 25px;
+  }
 }
 
 @media (max-width: 945px) {
@@ -1062,6 +1101,37 @@ img {
   .about__home-content {
     width: 100%;
     padding: 45px;
+  }
+}
+
+@media (max-width: 910px) {
+  .abouts {
+    padding: 50px 0;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto 40px;
+  }
+  .about:last-child {
+    margin-bottom: 0;
+  }
+  .about__img--right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about__img {
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .about__box {
+    width: 100%;
   }
 }
 
@@ -1139,6 +1209,9 @@ img {
   .stat {
     width: 33.33%;
   }
+  .about {
+    width: 80%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1183,6 +1256,16 @@ img {
   }
   #up {
     right: 13px;
+  }
+  .abouts {
+    padding: 40px 0;
+  }
+  .about {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -1310,6 +1393,9 @@ img {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 25px;
   }
+  .abouts {
+    padding: 25px 0;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1355,6 +1441,16 @@ img {
   }
   .stat {
     margin-bottom: 20px;
+  }
+  .abouts {
+    padding: 15px 0;
+  }
+  .about__img {
+    margin-bottom: 0;
+    display: block;
+  }
+  .about__title {
+    margin: 10px 0 8px;
   }
 }
 
