@@ -1,359 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arch Design Service</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body id="body">
-    <!-- * nav -->
-    <nav class="nav container">
-        <a class="nav__brand" href="#">
-            <img class="nav__logo" src="img/logo.png" alt="sitelogo">
-        </a>
-        <div id="toggler" class="nav__toggle">
-            <svg id="toggler__img" width="100" height="100" viewBox="0 0 100 100">
-                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-            </svg>
-        </div>
-        <div class="nav__lists">
-            <ul class="nav__list nav__list--links">
-                <li class="nav__item hidden">
-                    <a class="nav__brand" href="#">
-                        <img class="nav__logo" src="img/logo.png" alt="sitelogo">
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Bosh sahifa</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Biz haqimizda</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Loyihalar</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Xizmatlar</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Yangiliklar</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Bog'lanish</a>
-                </li>
-            </ul>
-            <div class="nav__dropdown">
-                <button class="nav__lang langclick">
-                    <img class="lang__img langclick" src="img/uzb_flag_logo.png" alt=" ">
-                    <span class="lang__text langclick">Uz</span>
-                    <i class="fas fa-chevron-down langclick"></i>
-                </button>
-                <ul class="nav__list nav__list--langs">
-                    <li class="nav__item lang">
-                        <a class="nav__link tick" href="#" data-id="uz">
-                            <img class="lang__img tick" src="img/uzb_flag_logo.png" alt=" " data-id="uz">
-                            <span class="lang__text tick" data-id="uz">Uz</span>
-                        </a>
-                    </li>
-                    <li class="nav__item lang">
-                        <a class="nav__link tick" href="#" data-id="ru">
-                            <img class="lang__img tick" src="img/russia_flag_logo.png" alt=" " data-id="ru">
-                            <span class="lang__text tick" data-id="ru">Ru</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- * home carousel -->
-    <!-- Slider main container -->
-    <div class="swiper main-swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide swiper__slide">
-                <img src="img/home_carousel1.jpg" alt="home_carousel1">
-                <div class="swiper__box">
-                    <div class="swiper__caption">
-                        <h2 class="swiper__title">Swiper title</h2>
-                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
-                        <a class="swiper__link" href="#">More info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper__slide">
-                <img src="img/home_carousel2.jpg" alt="home_carousel2">
-                <div class="swiper__box">
-                    <div class="swiper__caption">
-                        <h2 class="swiper__title">Swiper title</h2>
-                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
-                        <a class="swiper__link" href="#">More info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper__slide">
-                <img src="img/home_carousel3.jpg" alt="home_carousel3">
-                <div class="swiper__box">
-                    <div class="swiper__caption">
-                        <h2 class="swiper__title">Swiper title</h2>
-                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
-                        <a class="swiper__link" href="#">More info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper__slide">
-                <img src="img/home_carousel4.jpg" alt="home_carousel4">
-                <div class="swiper__box">
-                    <div class="swiper__caption">
-                        <h2 class="swiper__title">Swiper title</h2>
-                        <p class="swiper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequatur dolor quaerat est dignissimos vero, nulla corrupti, voluptates adipisci magni incidunt. Delectus, tenetur nemo!</p>
-                        <a class="swiper__link" href="#">More info</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arch Design Service</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<!-- * nav -->
+		<nav class="nav container">
+			<a class="nav__brand" href="#">
+				<img class="nav__logo" src="img/logo.png" alt="sitelogo" />
+			</a>
+			<div id="toggler" class="nav__toggle">
+				<svg id="toggler__img" width="100" height="100" viewBox="0 0 100 100">
+					<path
+						class="line line1"
+						d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+					/>
+					<path class="line line2" d="M 20,50 H 80" />
+					<path
+						class="line line3"
+						d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+					/>
+				</svg>
+			</div>
+			<div class="nav__lists">
+				<ul class="nav__list nav__list--links">
+					<li class="nav__item hidden">
+						<a class="nav__brand" href="#">
+							<img class="nav__logo" src="img/logo.png" alt="sitelogo" />
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Bosh sahifa</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Biz haqimizda</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Loyihalar</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Xizmatlar</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Yangiliklar</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Bog'lanish</a>
+					</li>
+				</ul>
+				<div class="nav__dropdown">
+					<button class="nav__lang langclick">
+						<img
+							class="lang__img langclick"
+							src="img/uzb_flag_logo.png"
+							alt=" "
+						/>
+						<span class="lang__text langclick">Uz</span>
+						<i class="fas fa-chevron-down langclick"></i>
+					</button>
+					<ul class="nav__list nav__list--langs">
+						<li class="nav__item lang">
+							<a class="nav__link tick" href="#" data-id="uz">
+								<img
+									class="lang__img tick"
+									src="img/uzb_flag_logo.png"
+									alt=" "
+									data-id="uz"
+								/>
+								<span class="lang__text tick" data-id="uz">Uz</span>
+							</a>
+						</li>
+						<li class="nav__item lang">
+							<a class="nav__link tick" href="#" data-id="ru">
+								<img
+									class="lang__img tick"
+									src="img/russia_flag_logo.png"
+									alt=" "
+									data-id="ru"
+								/>
+								<span class="lang__text tick" data-id="ru">Ru</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- ! location to be smooth scrolled to -->
+		<div id="smooth"></div>
+		<!-- * home carousel -->
+		<!-- Slider main container -->
+		<div class="swiper main-swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide swiper__slide">
+					<img src="img/home_carousel1.jpg" alt="home_carousel1" />
+					<div class="swiper__box">
+						<div class="swiper__caption">
+							<h2 class="swiper__title">Swiper title</h2>
+							<p class="swiper__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+								nihil consequatur dolor quaerat est dignissimos vero, nulla
+								corrupti, voluptates adipisci magni incidunt. Delectus, tenetur
+								nemo!
+							</p>
+							<a class="swiper__link" href="#">More info</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide swiper__slide">
+					<img src="img/home_carousel2.jpg" alt="home_carousel2" />
+					<div class="swiper__box">
+						<div class="swiper__caption">
+							<h2 class="swiper__title">Swiper title</h2>
+							<p class="swiper__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+								nihil consequatur dolor quaerat est dignissimos vero, nulla
+								corrupti, voluptates adipisci magni incidunt. Delectus, tenetur
+								nemo!
+							</p>
+							<a class="swiper__link" href="#">More info</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide swiper__slide">
+					<img src="img/home_carousel3.jpg" alt="home_carousel3" />
+					<div class="swiper__box">
+						<div class="swiper__caption">
+							<h2 class="swiper__title">Swiper title</h2>
+							<p class="swiper__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+								nihil consequatur dolor quaerat est dignissimos vero, nulla
+								corrupti, voluptates adipisci magni incidunt. Delectus, tenetur
+								nemo!
+							</p>
+							<a class="swiper__link" href="#">More info</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide swiper__slide">
+					<img src="img/home_carousel4.jpg" alt="home_carousel4" />
+					<div class="swiper__box">
+						<div class="swiper__caption">
+							<h2 class="swiper__title">Swiper title</h2>
+							<p class="swiper__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+								nihil consequatur dolor quaerat est dignissimos vero, nulla
+								corrupti, voluptates adipisci magni incidunt. Delectus, tenetur
+								nemo!
+							</p>
+							<a class="swiper__link" href="#">More info</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <!-- Navigation buttons -->
-        <div class="swiper-button-prev swiper__button"></div>
-        <div class="swiper-button-next swiper__button"></div>
-    </div>
-    <!-- * home content -->
-    <div class="container">
-        <div class="home">
-            <i class="fas fa-city home__icon"></i>
-            <h2 class="home__title">Lorem, ipsum dolor.</h2>
-            <p class="home__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <p class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consectetur inventore tenetur officiis pariatur voluptatem.</p>
-            <hr class="home__line">
-            <a class="home__link" href="#">Biz haqimizda</a>
-        </div>
-    </div>
-    <!-- * info -->
-    <div class="info">
-        <div class="container">
-            <div class="info__content">
-                <h2 class="info__title">Lorem, ipsum dolor.</h2>
-                <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores obcaecati rem eligendi numquam ex id nostrum adipisci, vel natus eveniet dolore sequi itaque ab, voluptates rerum sit, perspiciatis nemo quo.</p>
-                <a class="info__link" href="#">Batafsil</a>
-            </div>
-        </div>
-    </div>
-    <!-- * employees -->
-    <div class="container">
-        <div class="swiper employees">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="employee">
-                        <div class="employee__imgbox">
-                            <img class="employee__img" src="img/employee1.jpg" alt="employee__img">
-                        </div>
-                        <div class="employee__box">
-                            <h3 class="employee__name">Lorem ipsum dolor sit.</h3>
-                            <p class="employee__info">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="employee">
-                        <div class="employee__imgbox">
-                            <img class="employee__img" src="img/employee2.jpg" alt="employee__img">
-                        </div>
-                        <div class="employee__box">
-                            <h3 class="employee__name">Lorem ipsum dolor sit.</h3>
-                            <p class="employee__info">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="employee">
-                        <div class="employee__imgbox">
-                            <img class="employee__img" src="img/employee3.jpg" alt="employee__img">
-                        </div>
-                        <div class="employee__box">
-                            <h3 class="employee__name">Lorem ipsum dolor sit.</h3>
-                            <p class="employee__info">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="employee">
-                        <div class="employee__imgbox">
-                            <img class="employee__img" src="img/employee4.jpg" alt="employee__img">
-                        </div>
-                        <div class="employee__box">
-                            <h3 class="employee__name">Lorem ipsum dolor sit.</h3>
-                            <p class="employee__info">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="employee__button employee__button--prev">
-                <i class="fas fa-chevron-left"></i>
-            </div>
-            <div class="employee__button employee__button--next">
-                <i class="fas fa-chevron-right"></i>
-            </div>
-        </div>
-    </div>
-    <!-- * stats -->
-    <div class="container">
-        <div class="stats">
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-address-card"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-user-cog"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-            <div class="stat">
-                <div class="stat__img">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <h2 class="stat__num">324</h2>
-                <div class="stat__name">some text</div>
-            </div>
-        </div>
-    </div>
-    <!-- * footer -->
-    <div class="footer">
-        <div class="footer__content">
-            <div class="container">
-                <div class="footer__top">
-                    <div class="footer__contacts">
-                        <a class="footer__brand" href="#">
-                            <img class="footer__logo" src="img/footer_logo.png" alt="footer logo">
-                        </a>
-                        <div class="footer__line"></div>
-                        <div class="footer__contactbox">
-                            <a class="footer__contact" href="tel:+998 99 123 45 67">
-                                <i class="fas fa-phone-alt footer__contact--icon"></i>
-                                <span class="footer__contact--text">+998 99 123 45 67</span>
-                            </a>
-                        </div>
-                        <div class="footer__contactbox">
-                            <a class="footer__contact" href="mailto:info@archdesign.uz">
-                                <i class="fas fa-envelope footer__contact--icon"></i>
-                                <span class="footer__contact--text">info@archdesign.uz</span>
-                            </a>
-                        </div>
-                        <div class="footer__contactbox">
-                            <a class="footer__contact" href="https://www.google.com/maps/search/+%D0%B3.+%D0%A2%D0%B5%D1%80%D0%BC%D0%B5%D0%B7,/@37.2290345,67.2694544,18.74z" target="_blank">
-                                <i class="fas fa-map-marker-alt footer__contact--icon"></i>
-                                <span class="footer__contact--text">г. Термез, ул. Шукрона, дом 15д</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer__links">
-                        <h3 class="footer__links--title">Ma'lumot</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a class="footer__link" href="#">Biz haqimizda</a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="#">Loyihalar</a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="#">Xizmatlar</a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="#">Yangiliklar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom-wrap">
-                <div class="container">
-                    <div class="footer__bottom">
-                        <div class="footer__copyright">© 2022 Arch & Design Service, Все права защищены</div>
-                        <ul class="footer__social">
-                            <li class="footer__social--item">
-                                <a class="footer__social--link" href="#">
-                                    <i class="fab fa-facebook-f footer__social--icon"></i>
-                                </a>
-                            </li>
-                            <li class="footer__social--item">
-                                <a class="footer__social--link" href="#">
-                                    <i class="fab fa-telegram-plane footer__social--icon"></i>
-                                </a>
-                            </li>
-                            <li class="footer__social--item">
-                                <a class="footer__social--link" href="#">
-                                    <i class="fab fa-instagram footer__social--icon"></i>
-                                </a>
-                            </li>
-                            <li class="footer__social--item">
-                                <a class="footer__social--link" href="#">
-                                    <i class="fab fa-youtube footer__social--icon"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- * menu curtain -->
-    <div id="menu-curtain"></div>
-    <div></div>
-    <!-- ! link js -->
-    <script src="js/general.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/employees-swiper.js"></script>
-</body>
+			<!-- Navigation buttons -->
+			<div class="swiper-button-prev swiper__button"></div>
+			<div class="swiper-button-next swiper__button"></div>
+		</div>
+		<!-- * home content -->
+		<div class="container">
+			<div class="home">
+				<i class="fas fa-city home__icon"></i>
+				<h2 class="home__title">Lorem, ipsum dolor.</h2>
+				<p class="home__subtitle">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+				</p>
+				<p class="home__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+					consectetur inventore tenetur officiis pariatur voluptatem.
+				</p>
+				<hr class="home__line" />
+				<a class="home__link" href="#">Biz haqimizda</a>
+			</div>
+		</div>
+		<!-- * info -->
+		<div class="info">
+			<div class="container">
+				<div class="info__content">
+					<h2 class="info__title">Lorem, ipsum dolor.</h2>
+					<p class="info__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+						obcaecati rem eligendi numquam ex id nostrum adipisci, vel natus
+						eveniet dolore sequi itaque ab, voluptates rerum sit, perspiciatis
+						nemo quo.
+					</p>
+					<a class="info__link" href="#">Batafsil</a>
+				</div>
+			</div>
+		</div>
+		<!-- * employees -->
+		<div class="container">
+			<div class="swiper employees">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="employee">
+							<div class="employee__imgbox">
+								<img
+									class="employee__img"
+									src="img/employee1.jpg"
+									alt="employee__img"
+								/>
+							</div>
+							<div class="employee__box">
+								<h3 class="employee__name">Lorem ipsum dolor sit.</h3>
+								<p class="employee__info">Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="employee">
+							<div class="employee__imgbox">
+								<img
+									class="employee__img"
+									src="img/employee2.jpg"
+									alt="employee__img"
+								/>
+							</div>
+							<div class="employee__box">
+								<h3 class="employee__name">Lorem ipsum dolor sit.</h3>
+								<p class="employee__info">Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="employee">
+							<div class="employee__imgbox">
+								<img
+									class="employee__img"
+									src="img/employee3.jpg"
+									alt="employee__img"
+								/>
+							</div>
+							<div class="employee__box">
+								<h3 class="employee__name">Lorem ipsum dolor sit.</h3>
+								<p class="employee__info">Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="employee">
+							<div class="employee__imgbox">
+								<img
+									class="employee__img"
+									src="img/employee4.jpg"
+									alt="employee__img"
+								/>
+							</div>
+							<div class="employee__box">
+								<h3 class="employee__name">Lorem ipsum dolor sit.</h3>
+								<p class="employee__info">Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="employee__button employee__button--prev">
+					<i class="fas fa-chevron-left"></i>
+				</div>
+				<div class="employee__button employee__button--next">
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</div>
+		</div>
+		<!-- * stats -->
+		<div class="container">
+			<div class="stats">
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-user-tie"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-users"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-address-card"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-user-cog"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-hard-hat"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-hard-hat"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-hard-hat"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+				<div class="stat">
+					<div class="stat__img">
+						<i class="fas fa-hard-hat"></i>
+					</div>
+					<h2 class="stat__num">324</h2>
+					<div class="stat__name">some text</div>
+				</div>
+			</div>
+		</div>
+		<!-- * footer -->
+		<div class="footer">
+			<div class="footer__content">
+				<div class="container">
+					<div class="footer__top">
+						<div class="footer__contacts">
+							<a class="footer__brand" href="#">
+								<img
+									class="footer__logo"
+									src="img/footer_logo.png"
+									alt="footer logo"
+								/>
+							</a>
+							<div class="footer__line"></div>
+							<div class="footer__contactbox">
+								<a class="footer__contact" href="tel:+998 99 123 45 67">
+									<i class="fas fa-phone-alt footer__contact--icon"></i>
+									<span class="footer__contact--text">+998 99 123 45 67</span>
+								</a>
+							</div>
+							<div class="footer__contactbox">
+								<a class="footer__contact" href="mailto:info@archdesign.uz">
+									<i class="fas fa-envelope footer__contact--icon"></i>
+									<span class="footer__contact--text">info@archdesign.uz</span>
+								</a>
+							</div>
+							<div class="footer__contactbox">
+								<a
+									class="footer__contact"
+									href="https://www.google.com/maps/search/+%D0%B3.+%D0%A2%D0%B5%D1%80%D0%BC%D0%B5%D0%B7,/@37.2290345,67.2694544,18.74z"
+									target="_blank"
+								>
+									<i class="fas fa-map-marker-alt footer__contact--icon"></i>
+									<span class="footer__contact--text"
+										>г. Термез, ул. Шукрона, дом 15д</span
+									>
+								</a>
+							</div>
+						</div>
+						<div class="footer__links">
+							<h3 class="footer__links--title">Ma'lumot</h3>
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a class="footer__link" href="#">Biz haqimizda</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="#">Loyihalar</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="#">Xizmatlar</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="#">Yangiliklar</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom-wrap">
+					<div class="container">
+						<div class="footer__bottom">
+							<div class="footer__copyright">
+								© 2022 Arch & Design Service, Все права защищены
+							</div>
+							<ul class="footer__social">
+								<li class="footer__social--item">
+									<a class="footer__social--link" href="#">
+										<i class="fab fa-facebook-f footer__social--icon"></i>
+									</a>
+								</li>
+								<li class="footer__social--item">
+									<a class="footer__social--link" href="#">
+										<i class="fab fa-telegram-plane footer__social--icon"></i>
+									</a>
+								</li>
+								<li class="footer__social--item">
+									<a class="footer__social--link" href="#">
+										<i class="fab fa-instagram footer__social--icon"></i>
+									</a>
+								</li>
+								<li class="footer__social--item">
+									<a class="footer__social--link" href="#">
+										<i class="fab fa-youtube footer__social--icon"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- * menu curtain -->
+		<div id="menu-curtain"></div>
+		<div></div>
+		<!-- * to top button -->
+		<a id="up" href="#body" aria-label="up to top">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+		<!-- ! link js -->
+		<script src="js/general.js"></script>
+		<script src="js/dropdown.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/employees-swiper.js"></script>
+		<script src="js/upbutton.js"></script>
+	</body>
 </html>
