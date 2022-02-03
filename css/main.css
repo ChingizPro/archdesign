@@ -932,6 +932,56 @@ img {
   color: #534100;
 }
 
+.why {
+  padding: 60px 0 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.84))), url("../img/why_bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.84)), url("../img/why_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.why__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.why__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why__box {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+.why__icon {
+  font-size: 40px;
+  color: #ffd700;
+}
+
+.why__textbox {
+  width: 90%;
+}
+
+.why__textbox h3 {
+  text-transform: capitalize;
+  font-size: 19px;
+  margin: 15px 0 10px;
+  line-height: 1;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
@@ -1070,6 +1120,15 @@ img {
   }
 }
 
+@media (max-width: 1000px) {
+  .why {
+    padding: 50px 0 30px;
+  }
+  .why__textbox {
+    width: 100%;
+  }
+}
+
 @media (max-width: 975px) {
   .employees {
     width: 90%;
@@ -1132,6 +1191,12 @@ img {
   }
   .about__box {
     width: 100%;
+  }
+  .why {
+    padding: 40px 0 20px;
+  }
+  .why__box {
+    width: 48%;
   }
 }
 
@@ -1293,6 +1358,9 @@ img {
     text-align: center;
     padding: 30px;
   }
+  .why {
+    padding: 35px 0 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1380,6 +1448,25 @@ img {
   .stat__num {
     font-size: 32px;
   }
+  .why {
+    padding: 35px 0 5px;
+  }
+  .why__boxes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .why__box {
+    width: 80%;
+    text-align: center;
+  }
+  .why__box:last-child {
+    display: none;
+  }
+  .why__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1395,6 +1482,9 @@ img {
   }
   .abouts {
     padding: 25px 0;
+  }
+  .why__box {
+    width: 90%;
   }
 }
 
@@ -1452,6 +1542,9 @@ img {
   .about__title {
     margin: 10px 0 8px;
   }
+  .why__box {
+    width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1488,6 +1581,12 @@ img {
     width: 32px;
     height: 32px;
     font-size: 16px;
+  }
+  .why {
+    padding: 20px 0 0;
+  }
+  .why__box {
+    margin-bottom: 15px;
   }
 }
 
