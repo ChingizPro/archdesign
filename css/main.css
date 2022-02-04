@@ -982,6 +982,120 @@ img {
   line-height: 1;
 }
 
+.process {
+  margin-bottom: 35px;
+}
+
+.process__title {
+  font-size: 30px;
+  margin-top: 0;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.process__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.process__box {
+  width: 25%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.process__order {
+  position: relative;
+  width: 135px;
+  height: 135px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid #ffd700;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 0 5px #ffffff, 0 0 0 7px #ffd700;
+          box-shadow: 0 0 0 5px #ffffff, 0 0 0 7px #ffd700;
+  -webkit-transition: 0.2s background-color linear, 0.2s -webkit-box-shadow linear;
+  transition: 0.2s background-color linear, 0.2s -webkit-box-shadow linear;
+  transition: 0.2s background-color linear, 0.2s box-shadow linear;
+  transition: 0.2s background-color linear, 0.2s box-shadow linear, 0.2s -webkit-box-shadow linear;
+}
+
+.process__number {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffd700;
+  bottom: 100%;
+  right: 100%;
+  border-radius: 50%;
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
+  font-size: 19px;
+  font-weight: bold;
+  -webkit-transition: 0.2s background-color linear, 0.2s -webkit-box-shadow linear;
+  transition: 0.2s background-color linear, 0.2s -webkit-box-shadow linear;
+  transition: 0.2s background-color linear, 0.2s box-shadow linear;
+  transition: 0.2s background-color linear, 0.2s box-shadow linear, 0.2s -webkit-box-shadow linear;
+}
+
+.process__icon {
+  color: #ffd700;
+  font-size: 50px;
+  display: inline-block;
+  -webkit-transition: 0.2s color linear;
+  transition: 0.2s color linear;
+}
+
+.process__text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #534100;
+  -webkit-transition: 0.2s color linear;
+  transition: 0.2s color linear;
+}
+
+.process__box:hover .process__order {
+  background-color: #ffd700;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.process__box:hover .process__icon {
+  color: #000000;
+}
+
+.process__box:hover .process__number {
+  background-color: #000000;
+  color: #ffd700;
+}
+
+.process__box:hover .process__text {
+  color: #000000;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
