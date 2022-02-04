@@ -1096,6 +1096,51 @@ img {
   color: #000000;
 }
 
+.projects__title {
+  margin-top: 0;
+  text-align: center;
+  line-height: 1;
+  text-transform: capitalize;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 35px;
+  margin: 0;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project__info {
+  width: 50%;
+  padding: 70px 45px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.project__img {
+  width: 50%;
+  display: block;
+}
+
+.project__name {
+  font-size: 27px;
+}
+
+.project__text {
+  line-height: 1.7;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.project__year {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 @media (max-width: 1335px) {
   .container {
     padding-left: 50px;
