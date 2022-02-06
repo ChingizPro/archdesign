@@ -1373,6 +1373,12 @@ img {
   .project__name {
     margin-top: 0;
   }
+  .services-wrap {
+    padding: 40px 0 20px;
+  }
+  .service {
+    width: 48%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1427,6 +1433,9 @@ img {
   .nav {
     padding-top: 13px;
     padding-bottom: 12px;
+  }
+  .services-wrap {
+    padding-top: 30px;
   }
 }
 
@@ -1652,6 +1661,14 @@ img {
     width: 50%;
     padding: 15px;
   }
+  .services {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service {
+    width: 85%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1750,6 +1767,16 @@ img {
   }
   .project__info {
     padding: 25px;
+  }
+  .services-wrap {
+    padding: 25px 0 10px;
+  }
+  .services__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  .service {
+    width: 100%;
   }
 }
 
@@ -1957,6 +1984,13 @@ img {
   .op {
     width: 100%;
   }
+  .services-wrap {
+    padding: 20px 0 5px;
+  }
+  .services__title {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 435px) {
@@ -2030,6 +2064,9 @@ img {
   }
   .why__box {
     margin-bottom: 15px;
+  }
+  .services-wrap {
+    padding: 15px 0 0;
   }
 }
 
